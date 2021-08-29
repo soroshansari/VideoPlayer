@@ -1,0 +1,14 @@
+name: soroosh-movies
+
+nextApp:
+  component: "@sls-next/serverless-component@3.2.0"
+  inputs:
+    bucketName: soroosh-movies-data
+    domain: ["m", "ansarimehr.com"]
+    publicDirectoryCache:
+      value: public, max-age=100
+      test: /\.(srt)$/i
+    runtime:
+      defaultLambda: "nodejs14.x"
+      apiLambda: "nodejs14.x"
+    memory: 128

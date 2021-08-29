@@ -1,0 +1,23 @@
+{
+  "name": "soroosh-movie",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "serverless"
+  },
+  "dependencies": {
+    "mongodb": "^4.1.1",
+    "next": "^11.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@sls-next/serverless-component": "3.2.0",
+    "@types/react": "^17.0.19",
+    "serverless": "^2.56.0",
+    "typescript": "^4.4.2"
+  }
+}
